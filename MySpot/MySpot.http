@@ -4,4 +4,18 @@
 GET {{url}}
 
 ###
-GET {{url}}/WeatherForecast
+GET {{url}}/reservations
+
+###
+POST {{url}}/reservations
+Content-Type: application/json
+
+{
+    "EmployeeName": "John Doe",
+    "ParkingSpotName": "P1",
+    "LicensePlate": "XYZ123",
+    "Date": "2022-10-01"
+}
+
+###
+PUT {{url}}/reservations   

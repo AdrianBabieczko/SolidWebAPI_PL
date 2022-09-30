@@ -1,19 +1,19 @@
 using Microsoft.AspNetCore.Mvc;
+using MySpot.Api.Models;
 
 namespace MySpot.Api.Controllers;
 
-
+[ApiController]
+[Route("[controller]")]
 public class ReservationsController : ControllerBase
 {
-    [HttpGet(template:"get")]
+    [HttpGet]
     public void Get()
     {
-        
     }
-
-    [HttpGet(template:"get2")]
-    public void Get2()
+    
+    [HttpPost]
+    public void Post(Reservation reservation)
     {
-        
     }
 }
